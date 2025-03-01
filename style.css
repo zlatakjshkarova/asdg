@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box
+}
+html,
+body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+}
+
+.tabcontent{
+    background-color: orange;
+    padding: 0px;
+    height: 0px;
+    color: rgb(33, 36, 39);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 1px 1px 0.5px rgb(0, 0, 0);
+    
+    overflow: hidden;
+    
+}
+.tabcontent.active{
+    
+    
+    height: 250px;
+   
+  
+    padding: 20px;
+    
+    
+}
+.tab-btn{
+    background-color: grey;
+    border: 0;
+    padding: 15px;
+    font-size: 18px;
+    flex:1;
+    cursor: pointer;
+}
+.tab-btn:hover:not(.active){
+    background-color: rgb(185, 185, 185);
+}
+
+
+
+#tablist{
+    display: flex;
+    width: 100%;
+}
+
+#html  ,
+.active[data-lang='html']{
+    background-color: red;
+}
+#css,
+.active[data-lang='css']{
+background-color: chocolate;
+}
+#js,
+.active[data-lang='js']{
+    background-color: yellow;
+}
+#php,
+.active[data-lang='php']{
+    background-color: green;
+}
+
